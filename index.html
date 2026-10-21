@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinRoutine | روتين العناية بالبشرة</title>
+    <!-- استدعاء خط كايرو الاحترافي من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي -->
+    <nav class="navbar">
+        <div class="logo">✨ SkinRoutine</div>
+    </nav>
+
+    <!-- القسم الرئيسي (الهيرو) -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>اكتشفي روتين بشرتك المثالي</h1>
+            <p>مبني على أسس علمية وصيدلانية.. أداة ذكية لتحليل بشرتك وترشيح المنتجات الأنسب لميزانيتك في ثوانٍ.</p>
+        </div>
+    </header>
+
+    <!-- قسم الاختبار والأداة التفاعلية -->
+    <main class="quiz-container">
+        <div class="quiz-card">
+            <div class="step">
+                <label for="skin-type">1. ما هو نوع بشرتك؟</label>
+                <select id="skin-type">
+                    <option value="none" selected disabled>اختر نوع البشرة...</option>
+                    <option value="oily">دهنية (تفرز دهون في كل الوجه)</option>
+                    <option value="dry">جافة (مشدودة وتحتاج لترطيب)</option>
+                    <option value="combination">مختلطة (دهنية في منطقة T وجافة بالباقي)</option>
+                    <option value="normal">عادية (متوازنة)</option>
+                </select>
+            </div>
+
+            <div class="step">
+                <label for="skin-concern">2. ما هي المشكلة الأساسية التي تزعجك؟</label>
+                <select id="skin-concern">
+                    <option value="none" selected disabled>اختر المشكلة الأساسية...</option>
+                    <option value="acne">حب الشباب والمسام الواسعة</option>
+                    <option value="pigmentation">التصبغات والبقع الداكنة</option>
+                    <option value="dryness">الجفاف وبهتان البشرة</option>
+                </select>
+            </div>
+
+            <div class="step">
+                <label for="budget">3. ما هي ميزانيتك للروتين؟</label>
+                <select id="budget">
+                    <option value="none" selected disabled>اختر الميزانية...</option>
+                    <option value="economic">اقتصادية (أقل تكلفة بمنتجات فعالة)</option>
+                    <option value="medium">متوسطة (منتجات مستوردة ومحلية عالية الجودة)</option>
+                </select>
+            </div>
+
+            <button id="generate-btn" class="primary-btn">حلل بشرتي الآن 🔍</button>
+        </div>
+
+        <!-- قسم النتيجة (مخفي في البداية) -->
+        <div id="result-section" class="result-card hidden">
+            <!-- النتيجة ستظهر هنا عن طريق الجافا سكريبت -->
+        </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>تم التصميم والتطوير بواسطة د. خالد شليل &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
